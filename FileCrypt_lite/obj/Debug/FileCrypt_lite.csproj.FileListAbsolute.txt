@@ -1,0 +1,11 @@
+c:\users\andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\bin\Debug\FileCrypt_lite.exe.config
+c:\users\andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\bin\Debug\FileCrypt_lite.exe
+c:\users\andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\bin\Debug\FileCrypt_lite.pdb
+c:\users\andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\obj\Debug\FileCrypt_lite.Form1.resources
+c:\users\andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\obj\Debug\FileCrypt_lite.Properties.Resources.resources
+c:\users\andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\obj\Debug\FileCrypt_lite.csproj.GenerateResource.Cache
+c:\users\andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\obj\Debug\FileCrypt_lite.exe
+c:\users\andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\obj\Debug\FileCrypt_lite.pdb
+C:\Users\Andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\obj\Debug\FileCrypt_lite.csprojResolveAssemblyReference.cache
+C:\Users\Andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\obj\Debug\FileCrypt_lite.Form2.resources
+C:\Users\Andew\documents\visual studio 2013\Projects\FileCrypt_lite\FileCrypt_lite\obj\Debug\FileCrypt_lite.Form0.resources
