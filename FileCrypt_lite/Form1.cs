@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using System.Security.Cryptography;
 
 
 namespace FileCrypt_lite
@@ -17,13 +18,16 @@ namespace FileCrypt_lite
     {
         string File_name;
         int i=0;
-      
+
+
+
         public Form1()
         {
             InitializeComponent();
             LoadListview();
+          
         }
-
+       
         public void openFile()
         {
             
@@ -143,6 +147,7 @@ namespace FileCrypt_lite
         {
             Form2 f = new Form2();
             f.Show();
+           
         }
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
@@ -152,9 +157,45 @@ namespace FileCrypt_lite
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
-       
+        private void button4_Click(object sender, EventArgs e)
+        {
+     
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedIndices.Count <= 0) 
+            
+            { MessageBox.Show("Error!"); 
+              return; 
+            }
+           
+            File_name = listView1.Items[listView1.SelectedIndices[0]].Text;
+            FolderBrowserDialog fld = new FolderBrowserDialog();
+            fld.ShowDialog();
+            string chosenFolder = fld.SelectedPath;
+            File.Move(AppDomain.CurrentDomain.BaseDirectory + "..\\..\\Storage\\" + File_name, chosenFolder+"\\"+File_name);
+            LoadListview();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedIndices.Count <= 0)
+            {
+                MessageBox.Show("Error!");
+                return;
+            }
+
+            File_name = listView1.Items[listView1.SelectedIndices[0]].Text;
+            string ask = "Are you sure that you would like to delite " + File_name + "?";
+            var result = MessageBox.Show(ask, " Delition...", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes) ;
+            File.Delete(AppDomain.CurrentDomain.BaseDirectory + "..\\..\\Storage\\" + File_name);
+            LoadListview();
+        }
+
     }
 }
